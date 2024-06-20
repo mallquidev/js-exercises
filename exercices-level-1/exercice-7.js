@@ -11,12 +11,10 @@ proceso inverso. */
 const buttonOne = document.querySelector('#button1')
 const buttonTwo = document.querySelector('#button2')
 
-
 const divs = document.querySelectorAll('div')
 /* const divTwo = divs[1] */
 const divOne = divs[0]
 const divTwo = divs[1]
-
 
 buttonTwo.addEventListener('click', enviar)
 console.log('funka mrda')
