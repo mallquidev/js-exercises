@@ -7,3 +7,27 @@ segundo oculto.
 contenedor y mostrará el segundo. 
 ❖ Al pulsar el botón del segundo div, se realizará el 
 proceso inverso. */
+
+const buttonOne = document.querySelector('#button1')
+const buttonTwo = document.querySelector('#button2')
+
+
+const divs = document.querySelectorAll('div')
+/* const divTwo = divs[1] */
+const divOne = divs[0]
+const divTwo = divs[1]
+
+
+buttonTwo.addEventListener('click', enviar)
+console.log('funka mrda')
+function enviar() {
+    divOne.style.display = 'block'
+    divTwo.style.display = 'none'
+}
+
+buttonOne.addEventListener('click', enviarTwo)
+
+function enviarTwo() {
+    divTwo.style.display = 'block'
+    divOne.style.display = 'none'
+}
