@@ -7,3 +7,21 @@ los siguientes elementos:
 ❖ Al pulsar el botón, aparecerá en el contenedor div
 el valor “Hola, ” y el nombre introducido en el 
 campo de texto. */
+
+const buttons = document.querySelectorAll('button')
+const divs = document.querySelectorAll('div')
+
+const button = buttons[0]
+const div = divs[0]
+
+button.addEventListener('click', ponerTexto)
+
+function ponerTexto(e) {
+    const inputs = document.querySelectorAll('input')
+    const input = inputs[0]
+    console.log(input.value)
+    const valor = input.value
+    div.innerText = valor
+    e.preventDefault()
+    
+}
