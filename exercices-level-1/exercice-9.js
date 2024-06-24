@@ -6,18 +6,7 @@ formulario.
 El contenedor donde se muestra el nombre, tendrá 
 además un botón para regresar al formulario.*/
 
-const divs = document.querySelectorAll('div')
-const div = divs[0]
 const buttons = document.querySelectorAll('button')
 const button = buttons[0]
 
-button.addEventListener('click', ponerTitulo)
-function ponerTitulo(e) {
-    const inputs = document.querySelectorAll('input')
-    const input = inputs[0]
-    console.log(input.value)
-    e.preventDefault()
-}
-
-alert('xd')
-console.log('xd')
+button.addEventListener('click', )
