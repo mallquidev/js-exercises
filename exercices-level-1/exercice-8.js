@@ -9,19 +9,16 @@ el valor “Hola, ” y el nombre introducido en el
 campo de texto. */
 
 const buttons = document.querySelectorAll('button')
-const divs = document.querySelectorAll('div')
-
 const button = buttons[0]
-const div = divs[0]
 
 button.addEventListener('click', ponerTexto)
 
 function ponerTexto(e) {
-    const inputs = document.querySelectorAll('input')
-    const input = inputs[0]
+    const input = document.getElementById('nombre')
+    const textoDiv = document.getElementById('saludo')
     console.log(input.value)
     const valor = input.value
-    div.innerText = valor
+    textoDiv.innerText = valor
     e.preventDefault()
     
 }
