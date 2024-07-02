@@ -20,8 +20,6 @@ function verifyAnagrama(val1, val2) {
         return false
     }
     
-    
-    
 
 }
 let palabra1 = prompt('Ingrese una palabra')
